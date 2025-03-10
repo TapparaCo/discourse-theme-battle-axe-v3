@@ -1,5 +1,6 @@
 $border-color: dark-light-choose(#fdfbf9, #ff6600);
-$bg-color: dark-light-choose(#000, #fdfbf9);
+$bg-color: dark-light-choose(var(--secondary), #fdfbf9);
+$separator-color: dark-light-choose(#eb5f05, #ff6600);
 
 :root {
   --border-color: #{$border-color};
@@ -9,6 +10,38 @@ $bg-color: dark-light-choose(#000, #fdfbf9);
 body {
   background-color: var(--bg-color);
 }
+
+
+.topic-list .topic-list-item-separator td,
+.topic-post-visited-line {
+  border-bottom: 1px solid var(--separator-color) !important;
+  border-top: none !important;
+}
+.topic-list .topic-list-item-separator td span,
+.topic-post-visited-message,
+.chat-message-separator {
+  color: var(--separator-color) !important;
+  background-color: var(--bg-color) !important;
+}
+.chat-message-separator .divider {
+  background-color: var(--separator-color) !important;
+}
+
+a.mention {
+  color: var(--primary-high-or-secondary-low); // TODO: light color
+}
+
+.presence-users {
+  background-color: var(--bg-color); // TODO: is this required?
+}
+#reply-control {
+  background-color: var(--bg-color);
+}
+.user-stream .item,
+.user-stream .user-stream-item {
+  background-color: var(--bg-color);
+}
+
 
 .d-header {
   border-bottom: 8px solid var(--border-color);
