@@ -1,0 +1,38 @@
+{
+  "name": "Battle Axe v3",
+  "component": false,
+  "about_url": "https://github.com/TapparaCo/discourse-theme-battle-axe-v3",
+  "license_url": "https://github.com/TapparaCo/discourse-theme-battle-axe-v3/blob/master/LICENSE.md",
+  "authors": null,
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {},
+  "color_schemes": {
+    "Away Colors": {
+      "primary": "000000",
+      "secondary": "ffffff",
+      "tertiary": "1f69d3",
+      "quaternary": "ff6600",
+      "header_background": "154890",
+      "header_primary": "ffffff",
+      "highlight": "ffaa00",
+      "danger": "b30210",
+      "success": "009900",
+      "love": "ff6600"
+    },
+    "Home Colors": {
+      "primary": "ffffff",
+      "secondary": "0b264c",
+      "tertiary": "eb5f05",
+      "quaternary": "eb5f05",
+      "header_background": "eb5f05",
+      "header_primary": "ffffff",
+      "highlight": "ff8f45",
+      "danger": "b30210",
+      "success": "009900",
+      "love": "eb5f05"
+    }
+  },
+  "modifiers": {}
+}

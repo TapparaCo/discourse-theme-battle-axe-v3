@@ -1,0 +1,77 @@
+// Increase logo sizes
+#site-logo.logo-big {
+  height: 50px;
+  max-height: 50px;
+  max-width: 186px;
+}
+
+#site-logo.logo-small {
+  height: 50px;
+  max-height: 50px;
+  max-width: 51px;
+}
+
+// Reduced AdSense padding, hide ADVERTISEMENT-labels
+.adsense {
+  text-align: center;
+  padding: 1px;
+  margin-bottom: 5px;
+}
+
+// The so called "Sanitized Mod" UI adjustments
+
+.topic-list .activity .latest-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.topic-list .activity img.avatar {
+  vertical-align: middle;
+  margin-right: 5px;
+  max-height: 32px;
+  max-width: 32px;
+}
+
+.topic-list .activity {
+  width: 160px;
+  text-align: left;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+
+.topic-list .activity .latest-info .name {
+  display: block;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 0px;
+  color: #737373;
+}
+
+.topic-list .activity .latest-info .relative-date {
+  display: block;
+  font-size: 0.9em;
+  color: #737373;
+}
+
+.topic-list td {
+  padding: 2px 5px !important;
+}
+
+// Mark read topics with gray title
+.topic-list-item.visited .title {
+  color: var(--primary-medium) !important;
+}
+
+.topic-list .link-bottom-line {
+  display: none;
+}
+
+/* Fix for Discourse bug.
+   Progress indicator positioning gets off with footer. */
+.posts-wrapper {
+  margin-bottom: 16px;
+}
+
+#topic-progress-wrapper.docked {
+  margin-bottom: -20px;
+}

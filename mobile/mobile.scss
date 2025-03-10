@@ -1,0 +1,28 @@
+.d-header #site-logo {
+  max-height: 40px;
+  max-width: 100%;
+}
+
+.d-header .contents {
+  margin: 6px 0px;
+  // Temporary fix until avatar bug figured out
+  height: 44px !important;
+}
+
+.d-header .title {
+  max-width: 149px;
+  height: 44px;
+  min-width: 44px;
+}
+
+// Supress topic excerpts for mobile Categories view
+.topic-list {
+  .topic-excerpt {
+    display: none;
+  }
+}
+
+// Tone down real name under username
+.topic-meta-data .names .full-name {
+  font-weight: normal;
+}

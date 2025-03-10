@@ -1,0 +1,36 @@
+// Header logos to pure white
+.d-header-icons .d-icon,
+.header-sidebar-toggle button .d-icon {
+  opacity: 1;
+  color: var(--header_primary);
+}
+
+// Remove ADVERTISEMENT-labeld for DFP, AdSense
+.google-adsense-label {
+  display: none;
+}
+
+.google-dfp-ad-label {
+  display: none;
+}
+
+// Remove extra space between before ad in categories view
+#list-area {
+  margin-bottom: 20px;
+}
+
+// Hide the dangerous Mailing list mode -setting
+.user-preferences .pref-mailing-list-mode {
+  display: none;
+}
+
+// Header text/lock from gray to white
+.extra-info-wrapper span {
+  color: #fff;
+}
+
+.extra-info-wrapper svg {
+  fill: #fff;
+}
+
+
