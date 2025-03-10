@@ -6,6 +6,7 @@ $separator-color: dark-light-choose(#ff6600, #eb5f05);
   --border-color: #{$border-color};
   --bg-color: #{$bg-color};
   --separator-color: #{$separator-color};
+}
 
 body {
   background-color: var(--bg-color);
@@ -82,5 +83,3 @@ a.mention {
 .extra-info-wrapper svg {
   fill: #fff;
 }
-
-
