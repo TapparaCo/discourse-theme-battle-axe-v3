@@ -1,3 +1,20 @@
+$border-color: dark-light-choose(#fdfbf9, #ff6600);
+$bg-color: dark-light-choose(#000, #fdfbf9);
+
+:root {
+  --border-color: #{$border-color};
+  --bg-color: #{$bg-color};
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.d-header {
+  border-bottom: 8px solid var(--border-color);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 // Header logos to pure white
 .d-header-icons .d-icon,
 .header-sidebar-toggle button .d-icon {
