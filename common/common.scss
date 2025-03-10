@@ -1,11 +1,11 @@
-$border-color: dark-light-choose(#fdfbf9, #ff6600);
-$bg-color: dark-light-choose(var(--secondary), #fdfbf9);
-$separator-color: dark-light-choose(#eb5f05, #ff6600);
+$border-color: dark-light-choose(#ff6600, #fdfbf9);
+$bg-color: dark-light-choose(#fdfbf9, var(--secondary));
+$separator-color: dark-light-choose(#ff6600, #eb5f05);
 
 :root {
   --border-color: #{$border-color};
   --bg-color: #{$bg-color};
-}
+  --separator-color: #{$separator-color};
 
 body {
   background-color: var(--bg-color);
