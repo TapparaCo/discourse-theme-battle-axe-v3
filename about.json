@@ -32,6 +32,18 @@
       "danger": "b30210",
       "success": "009900",
       "love": "eb5f05"
+    },
+    "Terminal Colors": {
+      "primary": "d8dee9",
+      "secondary": "0b264c",
+      "tertiary": "88c0d0",
+      "quaternary": "f2a765",
+      "header_background": "071a33",
+      "header_primary": "d8dee9",
+      "highlight": "ebcb8b",
+      "danger": "bf616a",
+      "success": "a3be8c",
+      "love": "eb5f05"
     }
   },
   "modifiers": {}
