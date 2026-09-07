@@ -32,6 +32,18 @@
       "danger": "b30210",
       "success": "009900",
       "love": "eb5f05"
+    },
+    "Axe Nord": {
+      "primary": "eceff4",
+      "secondary": "2e3440",
+      "tertiary": "d08770",
+      "quaternary": "88c0d0",
+      "header_background": "242933",
+      "header_primary": "eceff4",
+      "highlight": "ebcb8b",
+      "danger": "bf616a",
+      "success": "a3be8c",
+      "love": "bf616a"
     }
   },
   "modifiers": {}
