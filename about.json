@@ -35,10 +35,10 @@
     },
     "Terminal Colors": {
       "primary": "d8dee9",
-      "secondary": "0b264c",
+      "secondary": "0d1117",
       "tertiary": "88c0d0",
       "quaternary": "f2a765",
-      "header_background": "071a33",
+      "header_background": "16110b",
       "header_primary": "d8dee9",
       "highlight": "ebcb8b",
       "danger": "bf616a",
