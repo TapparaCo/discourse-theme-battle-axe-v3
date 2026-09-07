@@ -1,7 +1,7 @@
 
 
-body {
-  background-color: var(--bg-color);
+body, .topic-list-item, .topic-post.visited {
+  background-color: var(--bg-color) !important;
 }
 
 
