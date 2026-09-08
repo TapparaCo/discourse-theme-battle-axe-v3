@@ -11,10 +11,12 @@ body, .topic-list-item, .topic-post.visited {
   border-top: none !important;
 }
 .topic-list .topic-list-item-separator td span,
-.topic-post-visited-message,
-.chat-message-separator {
+.topic-post-visited-message {
   color: var(--separator-color) !important;
   background-color: var(--bg-color) !important;
+}
+.chat-message-separator {
+  color: var(--separator-color) !important;
 }
 .chat-message-separator .divider {
   background-color: var(--separator-color) !important;
