@@ -1,5 +1,9 @@
 // Discourse doesn't expose the scheme name to SCSS, so key off $secondary (Axe Nord's is unique) to override per-palette.
-$border-color: if($secondary == #192333, $tertiary, dark-light-choose(#ff6600, #fdfbf9));
+// Header border is a 3-line orange/white/orange (dark) or orange/blue/orange (light) stripe.
+// Outer stripes reuse each scheme's own orange accent; the middle stripe is each scheme's
+// own "white"/header-blue shade, so both dark palettes keep their own tint instead of a shared literal.
+$border-color-outer: if($secondary == #192333, $tertiary, dark-light-choose(#ff6600, $tertiary));
+$border-color-middle: if($secondary == #192333, $primary, dark-light-choose($header_background, #fdfbf9));
 $bg-color: dark-light-choose(#fdfbf9, $secondary);
 $separator-color: dark-light-choose(#ff6600, #eb5f05);
 // Home Colors' tertiary is the same orange as its header_background, so any badge
@@ -8,7 +12,8 @@ $separator-color: dark-light-choose(#ff6600, #eb5f05);
 $unread-indicator-color: if($secondary == #0b264c, $highlight, var(--tertiary-med-or-tertiary));
 
 :root {
-  --border-color: #{$border-color};
+  --border-color-outer: #{$border-color-outer};
+  --border-color-middle: #{$border-color-middle};
   --bg-color: #{$bg-color};
   --separator-color: #{$separator-color};
   --unread-indicator-color: #{$unread-indicator-color};

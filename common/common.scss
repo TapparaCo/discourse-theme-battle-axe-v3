@@ -39,7 +39,20 @@ a.mention {
 
 
 .d-header {
-  border-bottom: 8px solid var(--border-color);
+  // Transparent border reserves the layout space; the background paints 3 hard-stop
+  // stripes into it (border-image can't do this — its slicing can't produce internal
+  // stripes along a single edge).
+  border-bottom: 8px solid transparent;
+  background-image: linear-gradient(
+    to bottom,
+    var(--border-color-outer) 0 33.34%,
+    var(--border-color-middle) 33.34% 66.66%,
+    var(--border-color-outer) 66.66% 100%
+  );
+  background-origin: border-box;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
