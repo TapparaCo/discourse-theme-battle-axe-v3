@@ -42,7 +42,7 @@ a.mention {
 }
 
 .chat-channel-unread-indicator {
-  background: var(--chat-unread-indicator-color);
+  background: var(--chat-unread-indicator-color) !important;
 }
 
 // Header logos to pure white
