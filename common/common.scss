@@ -44,7 +44,13 @@ a.mention {
 }
 
 .chat-channel-unread-indicator {
-  background: var(--chat-unread-indicator-color) !important;
+  background: var(--unread-indicator-color) !important;
+}
+
+// Header avatar badge for unread notifications (likes, replies, mentions) — same
+// tertiary-blends-into-header issue as the chat unread indicator above.
+.unread-notifications {
+  background-color: var(--unread-indicator-color) !important;
 }
 
 // Header logos to pure white

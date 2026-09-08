@@ -2,13 +2,14 @@
 $border-color: if($secondary == #232831, $tertiary, dark-light-choose(#ff6600, #fdfbf9));
 $bg-color: dark-light-choose(#fdfbf9, $secondary);
 $separator-color: dark-light-choose(#ff6600, #eb5f05);
-// Home Colors' tertiary is the same orange as its header_background, so the chat
-// unread indicator blends in. Use the scheme's lighter highlight orange there instead.
-$chat-unread-indicator-color: if($secondary == #0b264c, $highlight, var(--tertiary-med-or-tertiary));
+// Home Colors' tertiary is the same orange as its header_background, so any badge
+// using tertiary (chat unread bubble, header notification count) blends in. Use the
+// scheme's lighter highlight orange there instead.
+$unread-indicator-color: if($secondary == #0b264c, $highlight, var(--tertiary-med-or-tertiary));
 
 :root {
   --border-color: #{$border-color};
   --bg-color: #{$bg-color};
   --separator-color: #{$separator-color};
-  --chat-unread-indicator-color: #{$chat-unread-indicator-color};
+  --unread-indicator-color: #{$unread-indicator-color};
 }
