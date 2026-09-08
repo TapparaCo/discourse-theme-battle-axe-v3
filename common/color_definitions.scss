@@ -1,5 +1,5 @@
 // Discourse doesn't expose the scheme name to SCSS, so key off $secondary (Axe Nord's is unique) to override per-palette.
-$border-color: if($secondary == #1c2430, $tertiary, dark-light-choose(#ff6600, #fdfbf9));
+$border-color: if($secondary == #192333, $tertiary, dark-light-choose(#ff6600, #fdfbf9));
 $bg-color: dark-light-choose(#fdfbf9, $secondary);
 $separator-color: dark-light-choose(#ff6600, #eb5f05);
 // Home Colors' tertiary is the same orange as its header_background, so any badge
