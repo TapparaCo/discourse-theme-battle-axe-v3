@@ -41,6 +41,10 @@ a.mention {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.chat-channel-unread-indicator {
+  background: var(--chat-unread-indicator-color);
+}
+
 // Header logos to pure white
 .d-header-icons .d-icon,
 .header-sidebar-toggle button .d-icon {
