@@ -92,11 +92,11 @@ a.mention {
   display: none;
 }
 
-// Header text/lock from gray to white
+// Header text/lock from gray to header_primary (white on dark headers, dark on the light header)
 .extra-info-wrapper span {
-  color: #fff;
+  color: var(--header_primary);
 }
 
 .extra-info-wrapper svg {
-  fill: #fff;
+  fill: var(--header_primary);
 }
