@@ -25,10 +25,10 @@
     },
     "Home Colors": {
       "primary": "ffffff",
-      "secondary": "0b264c",
+      "secondary": "0a2856",
       "tertiary": "eb5f05",
       "quaternary": "eb5f05",
-      "header_background": "eb5f05",
+      "header_background": "0a1f3d",
       "header_primary": "ffffff",
       "hover": "454545",
       "selected": "1c3f66",
