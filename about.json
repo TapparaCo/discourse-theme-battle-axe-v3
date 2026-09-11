@@ -38,12 +38,12 @@
       "love": "eb5f05"
     },
     "Axe Nord": {
-      "primary": "eceff4",
+      "primary": "d8dee9",
       "secondary": "192333",
       "tertiary": "d08770",
       "quaternary": "88c0d0",
       "header_background": "0e1520",
-      "header_primary": "eceff4",
+      "header_primary": "d8dee9",
       "hover": "232d3d",
       "selected": "434c5e",
       "highlight": "ebcb8b",
