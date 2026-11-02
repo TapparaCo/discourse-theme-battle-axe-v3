@@ -11,10 +11,7 @@ Discourse theme for [Tappara.co](https://tappara.co).
 ## Features
 
 - Topic list on desktop with a category column and a latest post column showing the last poster's avatar, name and time
-- Header with accent border and white icons, also on login and signup pages
-- Unread indicator colors that stay visible against each scheme's header
-- AdSense and DFP "Advertisement" labels hidden
-- Mailing list mode preference hidden
+- Minor UI tweaks
 
 ## Theme components
 
