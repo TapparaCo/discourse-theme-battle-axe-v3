@@ -11,7 +11,7 @@
   max-width: 51px;
 }
 
-// Reduced AdSense padding, hide ADVERTISEMENT-labels
+// Reduced AdSense padding
 .adsense {
   text-align: center;
   padding: 1px;
@@ -19,59 +19,47 @@
 }
 
 // The so called "Sanitized Mod" UI adjustments
-
-.topic-list .activity .latest-info {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.topic-list .activity img.avatar {
-  vertical-align: middle;
-  margin-right: 5px;
-  max-height: 32px;
-  max-width: 32px;
-}
-
 .topic-list .activity {
   width: 160px;
   text-align: left;
-  padding-left: 20px;
   white-space: nowrap;
+
+  img.avatar {
+    vertical-align: middle;
+    margin-right: 5px;
+    max-height: 32px;
+    max-width: 32px;
+  }
+
+  .latest-info {
+    display: inline-block;
+    vertical-align: middle;
+
+    .name {
+      display: block;
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-top: 0;
+      color: var(--primary-high);
+    }
+
+    .relative-date {
+      display: block;
+      font-size: 0.9em;
+      color: var(--primary-medium);
+    }
+  }
 }
 
-.topic-list .activity .latest-info .name {
-  display: block;
-  font-weight: bold;
-  font-size: 0.9em;
-  margin-top: 0px;
-  color: var(--primary-high);
+// Core defines these on the cells, so override at the same level
+.topic-list tbody .topic-list-data {
+  --d-topic-list-data-padding-y: 2px;
+  --d-topic-list-data-padding-x: 5px;
+  --d-topic-list-data-padding-inline-start: 5px;
+  --d-topic-list-data-padding-inline-end: 5px;
 }
 
-.topic-list .activity .latest-info .relative-date {
-  display: block;
-  font-size: 0.9em;
-  color: var(--primary-medium);
-}
-
-.topic-list td {
-  padding: 2px 5px !important;
-}
-
-// Mark read topics with gray title
-.topic-list-item.visited .title {
-  color: var(--primary-medium) !important;
-}
-
+// Category has its own column and the forum doesn't use tags
 .topic-list .link-bottom-line {
   display: none;
-}
-
-/* Fix for Discourse bug.
-   Progress indicator positioning gets off with footer. */
-.posts-wrapper {
-  margin-bottom: 16px;
-}
-
-#topic-progress-wrapper.docked {
-  margin-bottom: -20px;
 }

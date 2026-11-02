@@ -1,70 +1,47 @@
-
-
-body, .topic-list-item, .topic-post.visited {
-  background-color: var(--bg-color) !important;
+// Selectors mirror core's so these win on source order
+.topic-list .topic-list-item-separator .topic-list-data,
+.small-action.topic-post-visited .topic-post-visited-line {
+  border-top: none;
+  border-bottom: 1px solid var(--separator-color);
+  color: var(--separator-color);
 }
 
+.topic-list .topic-list-item-separator .topic-list-data span,
+.chat-message-separator-new
+  .chat-message-separator__text-container
+  .chat-message-separator__text {
+  color: var(--separator-color);
+}
 
-.topic-list .topic-list-item-separator td,
-.topic-post-visited-line {
-  border-bottom: 1px solid var(--separator-color) !important;
-  border-top: none !important;
-}
-.topic-list .topic-list-item-separator td span,
-.topic-post-visited-message {
-  color: var(--separator-color) !important;
-  background-color: var(--bg-color) !important;
-}
-.chat-message-separator {
-  color: var(--separator-color) !important;
-}
-.chat-message-separator .divider {
-  background-color: var(--separator-color) !important;
+.chat-message-separator-new .chat-message-separator__line {
+  border-top-color: var(--separator-color);
 }
 
 a.mention {
-  color: var(--primary-high-or-secondary-low); // TODO: light color
-}
-
-.presence-users {
-  background-color: var(--bg-color); // TODO: is this required?
-}
-#reply-control {
-  background-color: var(--bg-color);
-}
-.user-stream .item,
-.user-stream .user-stream-item {
-  background-color: var(--bg-color);
-}
-
-
-.d-header {
-  border-bottom: 8px solid var(--border-color);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  color: var(--primary-high-or-secondary-low);
 }
 
 // Core strips the header to a plain var(--secondary) bar on auth pages, which hides
-// the white logo text on light schemes. Selectors mirror core's to win on source order.
-body.login-page,
-body.signup-page,
-body.invite-page,
-body.password-reset-page,
-body.activate-account-page {
+// the white logo text on light schemes. The auth selectors match core's specificity to win on source order.
+.d-header,
+body:is(
+    .login-page,
+    .signup-page,
+    .invite-page,
+    .password-reset-page,
+    .activate-account-page
+  )
   .d-header {
-    background-color: var(--header_background);
-    border-bottom: 8px solid var(--border-color);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  }
+  background-color: var(--header_background);
+  border-bottom: 8px solid var(--border-color);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
 }
 
-.chat-channel-unread-indicator {
-  background: var(--unread-indicator-color) !important;
-}
-
-// Header avatar badge for unread notifications (likes, replies, mentions) — same
-// tertiary-blends-into-header issue as the chat unread indicator above.
-.unread-notifications {
-  background-color: var(--unread-indicator-color) !important;
+// Home Colors' tertiary blends into its orange header, hiding unread badges
+// (chat unread bubble, header notification count). See color_definitions.scss.
+.chat-channel-unread-indicator:not(.-urgent),
+.d-header-icons .unread-notifications {
+  background: var(--unread-indicator-color);
 }
 
 // Header logos to pure white
@@ -74,16 +51,13 @@ body.activate-account-page {
   color: var(--header_primary);
 }
 
-// Remove ADVERTISEMENT-labeld for DFP, AdSense
-.google-adsense-label {
-  display: none;
-}
-
+// Remove ADVERTISEMENT labels for DFP, AdSense
+.google-adsense-label,
 .google-dfp-ad-label {
   display: none;
 }
 
-// Remove extra space between before ad in categories view
+// Core leaves 100px below the topic list; tighten the gap before the ad
 #list-area {
   margin-bottom: 20px;
 }
@@ -93,11 +67,11 @@ body.activate-account-page {
   display: none;
 }
 
-// Header text/lock from gray to white
+// Header topic title and lock icon in full header_primary instead of core's muted shades
 .extra-info-wrapper span {
-  color: #fff;
+  color: var(--header_primary);
 }
 
 .extra-info-wrapper svg {
-  fill: #fff;
+  fill: var(--header_primary);
 }

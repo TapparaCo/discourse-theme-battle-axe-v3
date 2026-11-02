@@ -2,16 +2,13 @@
   "name": "Battle Axe v3",
   "component": false,
   "about_url": "https://github.com/TapparaCo/discourse-theme-battle-axe-v3",
-  "license_url": "https://github.com/TapparaCo/discourse-theme-battle-axe-v3/blob/master/LICENSE.md",
-  "authors": null,
-  "theme_version": null,
-  "minimum_discourse_version": null,
-  "maximum_discourse_version": null,
-  "assets": {},
+  "license_url": "https://github.com/TapparaCo/discourse-theme-battle-axe-v3/blob/main/LICENSE",
+  "authors": "Tappara.co",
+  "minimum_discourse_version": "2026.5.0",
   "color_schemes": {
     "Away Colors": {
       "primary": "000000",
-      "secondary": "ffffff",
+      "secondary": "fdfbf9",
       "tertiary": "1f69d3",
       "quaternary": "ff6600",
       "header_background": "154890",
@@ -51,6 +48,5 @@
       "success": "a3be8c",
       "love": "bf616a"
     }
-  },
-  "modifiers": {}
+  }
 }

@@ -1,15 +1,25 @@
-// Discourse doesn't expose the scheme name to SCSS, so key off $secondary (Axe Nord's is unique) to override per-palette.
-$border-color: if($secondary == #192333, $tertiary, dark-light-choose(#ff6600, #fdfbf9));
-$bg-color: dark-light-choose(#fdfbf9, $secondary);
-$separator-color: dark-light-choose(#ff6600, #eb5f05);
+// Discourse doesn't expose the scheme name to SCSS, so key off each scheme's unique
+// $secondary to override per-palette. Keep these in sync with about.json.
+$home-secondary: #0b264c;
+$axe-nord-secondary: #192333;
+$border-color: if(
+  $secondary == $axe-nord-secondary,
+  $tertiary,
+  dark-light-choose(#f60, #fdfbf9)
+);
+$separator-color: dark-light-choose(#f60, #eb5f05);
+
 // Home Colors' tertiary is the same orange as its header_background, so any badge
 // using tertiary (chat unread bubble, header notification count) blends in. Use the
 // scheme's lighter highlight orange there instead.
-$unread-indicator-color: if($secondary == #0b264c, $highlight, var(--tertiary-med-or-tertiary));
+$unread-indicator-color: if(
+  $secondary == $home-secondary,
+  $highlight,
+  var(--tertiary-med-or-tertiary)
+);
 
 :root {
   --border-color: #{$border-color};
-  --bg-color: #{$bg-color};
   --separator-color: #{$separator-color};
   --unread-indicator-color: #{$unread-indicator-color};
 }
