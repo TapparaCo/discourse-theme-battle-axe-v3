@@ -44,13 +44,13 @@
   font-weight: bold;
   font-size: 0.9em;
   margin-top: 0px;
-  color: #737373;
+  color: var(--primary-high);
 }
 
 .topic-list .activity .latest-info .relative-date {
   display: block;
   font-size: 0.9em;
-  color: #737373;
+  color: var(--primary-medium);
 }
 
 .topic-list td {
