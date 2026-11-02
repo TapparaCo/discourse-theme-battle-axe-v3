@@ -17,7 +17,7 @@ Discourse theme for [Tappara.co](https://tappara.co).
 
 These components are installed separately and added to this theme:
 
-- [Google Consent Settings](https://github.com/TapparaCo/discourse-google-consent-settings): hides Google's floating consent toolbar and adds a "Privacy and cookie settings" link to the user menu and sidebar
+- [Google Consent Settings](https://github.com/TapparaCo/discourse-google-consent-settings): hides Google's floating consent toolbar and adds a "Cookie settings" link to the user menu and sidebar
 
 ## Installation
 
