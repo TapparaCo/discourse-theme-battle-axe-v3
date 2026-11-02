@@ -43,6 +43,20 @@ a.mention {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+// Core strips the header to a plain var(--secondary) bar on auth pages, which hides
+// the white logo text on light schemes. Selectors mirror core's to win on source order.
+body.login-page,
+body.signup-page,
+body.invite-page,
+body.password-reset-page,
+body.activate-account-page {
+  .d-header {
+    background-color: var(--header_background);
+    border-bottom: 8px solid var(--border-color);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
 .chat-channel-unread-indicator {
   background: var(--unread-indicator-color) !important;
 }
