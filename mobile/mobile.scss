@@ -3,8 +3,9 @@
   max-width: 100%;
 }
 
-.d-header .contents {
-  margin: 6px 0;
+// Core's 3.66em plus our 8px border is too tall on phones
+.d-header {
+  height: 3.25em;
 }
 
 .d-header .title {

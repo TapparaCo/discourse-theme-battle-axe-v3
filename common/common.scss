@@ -37,6 +37,24 @@ body:is(
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
 }
 
+// Core also centers the logo on auth pages; keep it left-aligned like everywhere else
+body:is(
+    .login-page,
+    .signup-page,
+    .invite-page,
+    .password-reset-page,
+    .activate-account-page
+  )
+  .d-header {
+  .home-logo-wrapper-outlet {
+    width: auto;
+  }
+
+  .title a {
+    margin: 0;
+  }
+}
+
 // Home Colors' tertiary blends into its orange header, hiding unread badges
 // (chat unread bubble, header notification count). See color_definitions.scss.
 .chat-channel-unread-indicator:not(.-urgent),
